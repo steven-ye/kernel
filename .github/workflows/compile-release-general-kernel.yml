@@ -20,7 +20,7 @@ on:
       kernel_version:
         description: "Select kernel version"
         required: false
-        default: "6.1.1"
+        default: "6.6.73"
         type: choice
         options:
           - 5.4.1_5.10.1
@@ -29,6 +29,7 @@ on:
           - 5.10.1
           - 5.15.1
           - 6.1.1
+          - 6.6.73
       kernel_auto:
         description: "Auto use the latest kernel"
         required: false
@@ -53,11 +54,11 @@ on:
       kernel_sign:
         description: "Set the kernel custom signature"
         required: false
-        default: "-ophub"
+        default: "-steven"
         type: choice
         options:
           - -ophub
-          - -yourname
+          - -steven
       kernel_config:
         description: "Set the path of kernel .config"
         required: false
